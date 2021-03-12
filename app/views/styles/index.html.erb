@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Styles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stylist</th>
+      <th>Address</th>
+      <th>Rating</th>
+      <th>Price</th>
+      <th>Image url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @styles.each do |style| %>
+      <tr>
+        <td><%= style.stylist %></td>
+        <td><%= style.address %></td>
+        <td><%= style.rating %></td>
+        <td><%= style.price %></td>
+        <td><%= style.image_url %></td>
+        <td><%= link_to 'Show', style %></td>
+        <td><%= link_to 'Edit', edit_style_path(style) %></td>
+        <td><%= link_to 'Destroy', style, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Style', new_style_path %>
