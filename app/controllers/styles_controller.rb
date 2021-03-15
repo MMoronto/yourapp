@@ -13,6 +13,7 @@ class StylesController < ApplicationController
   # GET /styles/new
   def new
     @style = Style.new
+    render 'styles/new'
   end
 
   # GET /styles/1/edit
