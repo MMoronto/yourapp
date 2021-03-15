@@ -17,6 +17,6 @@ class Style < ApplicationRecord
     end
 
     def image_url
-        image_url = 'app/assets/images/locs.jpg'
+        image_url = Image_url.new('app/assets/images/locs.jpg')
     end
 end
