@@ -1,22 +1,22 @@
 class Style < ApplicationRecord
 
     def stylist
-        stylist = Stylist.new('The Weaveinator')
+        stylist = 'The Weaveinator'
     end
 
     def address
-        address = Adress.new('17 Northgate Blvd, Marsgate, NJ 19015')
+        address = '17 Northgate Blvd, Marsgate, NJ 19015'
     end
 
     def ratings
-        ratings = Ratings.new('five stars')
+        ratings = 'five stars'
     end
 
     def price
-        price = Price.new(120.00)
+        price = 120.00
     end
 
     def image_url
-        image_url = Image_url.new('app/assets/images/locs.jpg')
+        image_url = 'app/assets/images/locs.jpg'
     end
 end
